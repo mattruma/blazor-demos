@@ -1,0 +1,53 @@
+﻿@inject NavigationManager NavigationManager
+
+<Bar Mode=BarMode.VerticalInline
+     CollapseMode=BarCollapseMode.Small
+     Breakpoint=Breakpoint.Desktop
+     NavigationBreakpoint=Breakpoint.Tablet
+     ThemeContrast=ThemeContrast.Dark>
+    <BarBrand>
+        <BarItem>
+            <BarLink To="/">BlazorApp1</BarLink>
+        </BarItem>
+    </BarBrand>
+    <BarMenu>
+        <BarStart>
+            <BarItem>
+                <BarLink To="/">
+                    <BarIcon IconName="IconName.Dashboard" />
+                    <Text>Home</Text>
+                </BarLink>
+            </BarItem>
+            <BarItem>
+                <BarLink To="/counter">
+                    <BarIcon IconName="IconName.Add" />
+                    <Text>Counter</Text>
+                </BarLink>
+            </BarItem>
+            <BarItem>
+                <BarLink To="/weather">
+                    <BarIcon IconName="IconName.Sun" />
+                    <Text>Weather Forecast</Text>
+                </BarLink>
+            </BarItem>
+            <BarItem>
+                <BarLink To="/people1">
+                    <BarIcon IconName="IconName.Users" />
+                    <Text>People1</Text>
+                </BarLink>
+            </BarItem>
+            <BarItem>
+                <BarLink To="/people2">
+                    <BarIcon IconName="IconName.Users" />
+                    <Text>People2</Text>
+                </BarLink>
+            </BarItem>
+            <BarItem>
+                <BarLink To="/people3">
+                    <BarIcon IconName="IconName.Users" />
+                    <Text>People3</Text>
+                </BarLink>
+            </BarItem>
+        </BarStart>
+    </BarMenu>
+</Bar>

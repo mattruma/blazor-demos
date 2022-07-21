@@ -1,0 +1,25 @@
+﻿@page "/people3"
+@inject TypedHttpClientPersonService PersonService
+
+<PageTitle>People3</PageTitle>
+
+<Heading>People3</Heading>
+
+@if (this.People == null)
+{
+    <p><em>Loading...</em></p>
+    return;
+}
+
+<Div Margin=Margin.Is4.FromTop>
+    <PeopleTableComponent People=@this.People />
+</Div>
+
+@code {
+    private PersonList? People;
+
+    protected override async Task OnInitializedAsync()
+    {
+        this.People = await PersonService.ListAsync();
+    }
+}

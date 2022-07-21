@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32611.2
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp1", "BlazorApp1\BlazorApp1.csproj", "{B1A135AA-D670-4536-A96F-12D021EF17BB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorClassLibrary1", "RazorClassLibrary1\RazorClassLibrary1.csproj", "{59D99862-529B-4005-B93C-95D9DBA1BC70}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiApp1", "MauiApp1\MauiApp1.csproj", "{F97A8A65-347D-4505-AACC-16889C33F4D6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{411656DD-90DD-40D9-8551-8492FA8B1F8D}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1A135AA-D670-4536-A96F-12D021EF17BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1A135AA-D670-4536-A96F-12D021EF17BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1A135AA-D670-4536-A96F-12D021EF17BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1A135AA-D670-4536-A96F-12D021EF17BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59D99862-529B-4005-B93C-95D9DBA1BC70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59D99862-529B-4005-B93C-95D9DBA1BC70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59D99862-529B-4005-B93C-95D9DBA1BC70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59D99862-529B-4005-B93C-95D9DBA1BC70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F97A8A65-347D-4505-AACC-16889C33F4D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F97A8A65-347D-4505-AACC-16889C33F4D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F97A8A65-347D-4505-AACC-16889C33F4D6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F97A8A65-347D-4505-AACC-16889C33F4D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F97A8A65-347D-4505-AACC-16889C33F4D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F97A8A65-347D-4505-AACC-16889C33F4D6}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {62E3D098-ABB8-4D2C-A54A-521A24F3DC14}
+	EndGlobalSection
+EndGlobal

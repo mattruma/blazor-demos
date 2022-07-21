@@ -1,0 +1,22 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<Component1 />
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+<Button Type=ButtonType.Button Color=Color.Primary @onclick="Prompt">
+    Prompt
+</Button>
+
+<Div Margin=Margin.Is4.FromTop>
+    <Paragraph>Reading from <Code>appsettings.json</Code></Paragraph>
+    <UnorderedList>
+        <UnorderedListItem>@this.Configuration["VALUE_1"]</UnorderedListItem>
+        <UnorderedListItem>@this.Configuration["VALUE_2"]</UnorderedListItem>
+    </UnorderedList>
+</Div>

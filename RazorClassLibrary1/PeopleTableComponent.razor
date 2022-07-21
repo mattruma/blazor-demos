@@ -1,0 +1,30 @@
+﻿@if (this.People == null)
+{
+    <p><em>Loading...</em></p>
+    return;
+}
+
+<Div Margin=Margin.Is4.FromTop>
+    <Table>
+        <TableHeader>
+            <TableRow>
+                <TableHeaderCell>Name</TableHeaderCell>
+                <TableHeaderCell>Url</TableHeaderCell>
+            </TableRow>
+        </TableHeader>
+        <TableBody>
+            @foreach (var person in this.People.Results)
+            {
+                <TableRow>
+                    <TableRowCell>@person.Name</TableRowCell>
+                    <TableRowCell><Anchor To=@person.Url>@person.Url</Anchor></TableRowCell>
+                </TableRow>
+            }
+        </TableBody>
+    </Table>
+</Div>
+
+@code {
+    [Parameter]
+    public PersonList People { get; set; }
+}

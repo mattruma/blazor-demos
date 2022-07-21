@@ -1,0 +1,21 @@
+﻿@inherits LayoutComponentBase
+
+<Layout Sider>
+    <LayoutSider>
+        <LayoutSiderContent>
+            <NavMenu />
+        </LayoutSiderContent>
+    </LayoutSider>
+    <Layout>
+        <LayoutHeader>
+            <Container Fluid>
+                <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
+            </Container>
+        </LayoutHeader>
+        <LayoutContent>
+            <Container Fluid>
+                @Body
+            </Container>
+        </LayoutContent>
+    </Layout>
+</Layout>
