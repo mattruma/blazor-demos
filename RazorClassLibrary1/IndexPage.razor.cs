@@ -3,7 +3,7 @@ using Microsoft.Extensions.Configuration;
 
 namespace RazorClassLibrary1
 {
-    public partial class Index : ComponentBase
+    public partial class IndexPage
     {
         [Inject]
         public IConfiguration Configuration { get; set; }

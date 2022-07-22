@@ -1,0 +1,28 @@
+﻿@page "/person/{id}"
+@inject HttpClientPersonService PersonService
+
+@if (this.Person == null)
+{
+    <p><em>Loading...</em></p>
+    return;
+}
+
+<PageTitle>Person - @this.Person.Name</PageTitle>
+
+<Heading>@this.Person.Name</Heading>
+
+<Div Margin=Margin.Is4.FromTop>
+    <PersonComponent Person=@this.Person />
+</Div>
+
+@code {
+    [Parameter]
+    public string Id { get; set; }
+
+    private Person Person;
+
+    protected override async Task OnInitializedAsync()
+    {
+        this.Person = await PersonService.GetByIdAsync(this.Id);
+    }
+}

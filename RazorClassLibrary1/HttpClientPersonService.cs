@@ -26,5 +26,21 @@ namespace RazorClassLibrary1
 
             return result;
         }
+
+        public async Task<Person> GetByIdAsync(
+            string id)
+        {
+            var httpResponseMessage =
+                await _httpClient.GetAsync($"api/people/{id}");
+
+            httpResponseMessage.EnsureSuccessStatusCode();
+
+            var result =
+                await httpResponseMessage.Content.ReadFromJsonAsync<Person>();
+
+            if (result == null) return new Person();
+
+            return result;
+        }
     }
 }

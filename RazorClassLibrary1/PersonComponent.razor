@@ -1,0 +1,24 @@
+﻿@if (this.Person == null)
+{
+    <p><em>Loading...</em></p>
+    return;
+}
+
+<Div Margin=Margin.Is4.FromTop>
+    <UnorderedList>
+        <UnorderedListItem>
+            <Text>@this.Person.Id</Text>
+        </UnorderedListItem>
+        <UnorderedListItem>
+            <Text>@this.Person.Name</Text>
+        </UnorderedListItem>
+        <UnorderedListItem>
+            <Anchor To=@this.Person.Url>@this.Person.Url</Anchor>
+        </UnorderedListItem>
+    </UnorderedList>
+</Div>
+
+@code {
+    [Parameter]
+    public Person Person { get; set; }
+}

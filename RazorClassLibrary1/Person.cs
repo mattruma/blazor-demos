@@ -2,6 +2,15 @@
 {
     public class Person
     {
+        public string Id
+        {
+            get
+            {
+                var values = this.Url.Split("/");
+                return values[5];
+            }
+        }
+
         public string Name { get; set; }
 
         public string Url { get; set; }

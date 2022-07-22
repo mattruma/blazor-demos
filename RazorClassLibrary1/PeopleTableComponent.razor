@@ -8,6 +8,7 @@
     <Table>
         <TableHeader>
             <TableRow>
+                <TableHeaderCell>Id</TableHeaderCell>
                 <TableHeaderCell>Name</TableHeaderCell>
                 <TableHeaderCell>Url</TableHeaderCell>
             </TableRow>
@@ -16,7 +17,8 @@
             @foreach (var person in this.People.Results)
             {
                 <TableRow>
-                    <TableRowCell>@person.Name</TableRowCell>
+                    <TableRowCell>@person.Id</TableRowCell>
+                    <TableRowCell><Anchor To=@($"/person/{person.Id}")>@person.Name</Anchor></TableRowCell>
                     <TableRowCell><Anchor To=@person.Url>@person.Url</Anchor></TableRowCell>
                 </TableRow>
             }
@@ -26,5 +28,5 @@
 
 @code {
     [Parameter]
-    public PersonList People { get; set; }
+    public PersonList? People { get; set; }
 }

@@ -59,6 +59,7 @@ namespace MauiApp1
             builder.Services.AddScoped<ExampleJsInterop>();
             builder.Services.AddScoped<HttpClientPersonService>();
             builder.Services.AddScoped<NamedHttpClientPersonService>();
+            builder.Services.AddScoped<InheritedNamedHttpClientPersonService>();
 
             return builder.Build();
         }

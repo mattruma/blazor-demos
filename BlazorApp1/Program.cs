@@ -38,5 +38,6 @@ builder.Services.AddScoped<WeatherForecastService>();
 builder.Services.AddScoped<ExampleJsInterop>();
 builder.Services.AddScoped<HttpClientPersonService>();
 builder.Services.AddScoped<NamedHttpClientPersonService>();
+builder.Services.AddScoped<InheritedNamedHttpClientPersonService>();
 
 await builder.Build().RunAsync();
