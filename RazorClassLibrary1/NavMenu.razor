@@ -1,6 +1,4 @@
-﻿@inject NavigationManager NavigationManager
-
-<Bar Mode=BarMode.VerticalInline
+﻿<Bar Mode=BarMode.VerticalInline
      CollapseMode=BarCollapseMode.Small
      Breakpoint=Breakpoint.Desktop
      NavigationBreakpoint=Breakpoint.Tablet
@@ -52,6 +50,18 @@
                 <BarLink To="/people4">
                     <BarIcon IconName="IconName.Users" />
                     <Text>People4</Text>
+                </BarLink>
+            </BarItem>
+            <BarItem>
+                <BarLink To="/secured">
+                    <BarIcon IconName=@("fa-sign-in-alt") />
+                    <Text>Sign In</Text>
+                </BarLink>
+            </BarItem>
+            <BarItem>
+                <BarLink Clicked=@this.SignOut>
+                    <BarIcon IconName=@("fa-sign-out-alt") />
+                    <Text>Sign Out</Text>
                 </BarLink>
             </BarItem>
         </BarStart>

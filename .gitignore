@@ -5,6 +5,7 @@
 *.log
 *.vs
 *.vscode
+*.Development.json
 
 # Bicep
 

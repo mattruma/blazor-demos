@@ -1,0 +1,31 @@
+﻿@page "/secured"
+@attribute [Authorize]
+
+<PageTitle>Secured</PageTitle>
+
+<Heading>Secured</Heading>
+<Paragraph>You have reached a secure page that requires authentication.</Paragraph>
+
+@if (this.User == null)
+{
+    <p><em>Loading...</em></p>
+    return;
+}
+
+<Table>
+    <TableHeader>
+        <TableRow>
+            <TableHeaderCell>Key</TableHeaderCell>
+            <TableHeaderCell>Value</TableHeaderCell>
+        </TableRow>
+    </TableHeader>
+    <TableBody>
+        @foreach (var claim in this.User.Claims)
+        {
+            <TableRow>
+                <TableRowCell><Code>@claim.Type</Code></TableRowCell>
+                <TableRowCell>@claim.Value</TableRowCell>
+            </TableRow>
+        }
+    </TableBody>
+</Table>

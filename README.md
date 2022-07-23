@@ -15,9 +15,10 @@ Demos related to Blazor and Maui.
 
 ## Features
 
-* Share components.
+* Share components between the Blazor and Maui applications.
 * Read settings from `appsettings.json`. Easy for Blazor, but not so easy for Maui, have to embedded `appsettings.json` as a resource and load it in `MainProgram.cs`.
-* Use `IConfiguration`.
+* Use `IConfiguration` in pages to display values.
 * Call an external API using `HttpClient`, `HttpClientFactory` and a typed `HttpClient` using dependency injection.
-* Call JavaScript.
-* Use third-party library, Blazorise.
+* Call an external API inheriting from `ServiceBase` class.
+* Call JavaScript from a class library.
+* Use a third-party UI library, [Blazorise](https://blazorise.com/).
